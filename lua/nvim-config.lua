@@ -17,6 +17,11 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Navigate windows down" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Navigate windows up" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Navigate windows right" })
 
+-- Buffer navigation
+vim.keymap.set("n", "ll", ":bnext<CR>", { desc = "Next buffer" })
+vim.keymap.set("n", "hh", ":bprevious<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "cc", ":bdelete<CR>", { desc = "Close buffer" })
+
 -- Resize windows with arrows
 vim.keymap.set("n", "H", ":vertical resize -2<CR>", { silent = true })
 vim.keymap.set("n", "L", ":vertical resize +2<CR>", { silent = true })
